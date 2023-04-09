@@ -1,0 +1,61 @@
+@import "../../variables.scss";
+
+.article {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  background: $color-blog;
+}
+
+.article__image {
+  width: 100%;
+  height: 100%;
+  background: $color-bg;
+  // overflow: hidden;
+}
+
+.article__image img {
+  width: 100%;
+  height: 100%;
+  // object-fit: cover;
+}
+
+.article__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 1rem 1.5rem;
+  height: 100%;
+}
+
+.article__content p {
+  font-size: 11.65px;
+  font-weight: 700;
+  line-height: 35px;
+
+  color: #fff;
+}
+
+.article__content h3 {
+  font-size: 25.11px;
+  font-weight: 800;
+  line-height: 30.3px;
+
+  color: #fff;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.article__content p:last-child {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .article__content h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
